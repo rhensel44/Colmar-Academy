@@ -16,6 +16,7 @@ header {
   justify-content: space-between;
   background-color: white;
   top: 0;
+  z-index: 5;
 }
 
 .toplogo {
@@ -66,31 +67,39 @@ header {
   height: auto;
 }
 
-.lefttop {
+.righttop {
   display: flex;
   width: 40%;
   margin-left: 24px;
 }
 
-.lefttop div {
+.righttop div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  width: 70%;
   margin-left: 24px;
 }
 
 .button {
-  background-color: blue;
+  background-color: grey;
   align-content: center;
   width: 100%;
+  height: 32px;
+  border: none;
+  border-radius: 2px;
 }
 
-.lefttop h3 {
+.button span {
+  padding: 8px 0;
+  color: lightgrey;
+}
+
+.righttop h2 {
   margin-bottom: 20px;
 }
 
-.lefttop h5 {
+.righttop h4 {
    margin-bottom: 20px;
   }
 
@@ -118,6 +127,7 @@ header {
 
 .lefthalf h5 {
   margin-top: 24px;
+  font-size: 12px;
 }
 
 .lefthalf img {
@@ -135,6 +145,7 @@ header {
   flex-direction: column;
   align-content: space-between;
   height: 100%;
+  border-left: 1px solid lightgrey;
 }
 
 .words {
@@ -144,15 +155,12 @@ header {
 .one, .two, .three {
   display: flex;
   align-items: center;
-  border-width: 5px;
-  border-color: blue;
   width: 100%;
 }
 
 .one {
   margin-bottom: 16px;
 }
-
 .two {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -172,6 +180,22 @@ header {
   height: auto;
 }
 
+.words {
+  margin-left: 24px;
+}
+
+.words span {
+  font-size: 12px;
+  color: grey;
+  margin: 8px 0;
+}
+
+.words a {
+  color: blue;
+  text-decoration: none;
+  font-size: 12px;
+}
+
 /*start learning section*/
 
 .startlearning {
@@ -185,16 +209,23 @@ header {
   margin-top: 32px;
   left: 0;
   justify-content: center;
+  padding: 32px 0 32px 0;
 }
 
 .startlearningflex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .startlearningflex div {
-  margin: 16px;
-  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px 16px 16px;
+  width: 27%;
+  background-color: white;
+  z-index: 1;
+  align-content: space-between;
 }
 
 .startlearning div img {
@@ -205,12 +236,160 @@ header {
 
 .startlearningflex div h4 {
   margin-bottom: 8px;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .startlearning div h5 {
   margin-bottom: 8px;
+  margin-right: 16px;
+  margin-left: 16px;
+  color: grey;
+  font-size: 14px;
 }
 
 .startlearning div p {
   margin-bottom: 24px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+/*thesis exhibit section*/
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesistitle {
+  align-self: center;
+  margin: 32px 0;
+}
+
+.bigthesisflex {
+  display: flex;
+  width: 100%;
+}
+
+.bigthesisflex div {
+  margin-left: 24px;
+}
+
+.leftthesis {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftthesis video {
+  width: 100%;
+  height: auto;
+}
+
+.leftthesis h4 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.leftthesis span {
+  margin-bottom: 32px;
+  color: grey;
+  font-size: 14px;
+}
+
+.rightthesis {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+  align-content: flex-start;
+}
+
+.thesisone {
+  background-color: lightgrey;
+  z-index: 1;
+  display: flex;
+}
+
+.thesisone img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+  align-self: center;
+}
+
+.thesisone div {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.thesistwo {
+  display: flex;
+}
+
+.thesistwo img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+  align-self: center;
+}
+
+.thesistwo div {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.rightthesis div div span {
+  font-size: 12px;
+  color: grey;
+  margin-top: 16px;
+}
+
+/*footer section*/
+
+footer {
+  display: flex;
+  margin: 16px 16px 32px 24px;
+  justify-content: space-between;
+}
+
+.footleft span {
+  color: grey;
+  font-size: 12px;
+}
+
+.footright a {
+  text-decoration: none;
+  color: grey;
+  font-size: 12px;
+}
+
+/*general settings*/
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+  color: grey;
 }
