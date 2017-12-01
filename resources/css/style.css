@@ -203,6 +203,10 @@ header {
 
 /*start learning section*/
 
+.mobilestartlearningflex {
+  display: none;
+}
+
 .startlearning {
   width: 100%;
   margin-right: 56px;
@@ -501,6 +505,79 @@ p {
     flex-direction: column;
     padding: 16px 32px 0px 32px;
     width: 100%;
+  }
+
+/*start learning section*/
+
+  .startlearning {
+    margin: 0 0 32px 0;
+    background-color: white;
+  }
+
+  .startlearningtitle {
+    margin: 32px 0 16px 0;
+    padding: 0;
+  }
+
+  .startlearningflex {
+    display: none;
+  }
+
+  .mobilestartlearningflex {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobilestartlearningflex div {
+    display: flex;
+    margin: 0 16px;
+    justify-content: center;
+    margin: 4px 16px;
+  }
+  .mobilestartlearningflex div button {
+    background-color: lightgrey;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 16px;
+  }
+
+/*thesis exhibit section*/
+
+  .thesistitle {
+    margin-bottom: 16px;
+  }
+  .rightthesis {
+    display: none;
+  }
+  .leftthesis {
+    width: 100%;
+    margin: 0;
+  }
+  .bigthesisflex {
+    margin: 0 0 24px 0;
+  }
+  .bigthesisflex div {
+    margin: 0;
+  }
+  .leftthesis h4 {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .leftthesis span {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+
+/*footer section*/
+
+  footer {
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin-left: 3px;
   }
 
 }
